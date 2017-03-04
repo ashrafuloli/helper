@@ -1,0 +1,70 @@
+https://www.youtube.com/watch?v=YQ34_kxw4bA&list=PLAiCXniewq3GVUeOD7HAo8FrW0M3iqSi6
+
+1. short code
+--------------
+ctrl+c
+ctrl+v
+ctrl+shift+v
+ctrl+d
+ctrl+s
+ctrl+shift+s
+ctrl+shift+f
+ctrl+h
+ctrl+j
+ctrl+z
+ctrl+/
+ctrl+shift+/
+ctrl+n
+ctrl+shift+n
+ctrl+page up
+ctrl+page down
+
+
+ctrl+shift+p > set syntax:html  / php
+
+
+2.preferences > key bindings
+------------------------------
+
+[
+	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste" },
+	{ "keys": ["alt+a"], "command": "find_all_under" },
+	{ "keys": ["ctrl+i"], "command": "reindent" },
+]
+
+
+3.package control
+------------------
+
+https://packagecontrol.io/installation
+
+ctrl+`
+
+ctrl+shift+p -> install package
+
+ctrl+shift+p -> coffee script 
+
+
+ctrl+shift+p -> emmet
+
+
+ctrl+shift+p -> sidebar
+
+
+4.file search
+--------------
+
+ctrl+p > file name
+
+
+ctrl+p > function.php @ function name
+
+ctrl+k+b  > hide sidebar
+ctrl+shift+p > mini 
+
+5.use sinppepts
+--------------
+
+use sinppepts function /$
+

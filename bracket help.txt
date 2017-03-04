@@ -1,0 +1,33 @@
+accessability
+
+Emmet
+
+Autoprefixer
+
+Indent Guides
+
+Beautify
+
+Brackets CSS Class Code hint
+
+Brackets File Icons
+
+Brackets WordPress Functions Hints
+
+Custom Work
+
+Documents Toolbar
+
+Dream PHP
+
+jsfire
+
+PHP SmartHints
+
+SASS/SCSS Hints
+
+Ariane
+
+AngularJS Code Hints
+
+new one dark
