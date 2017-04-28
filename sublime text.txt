@@ -31,6 +31,8 @@ ctrl+shift+p > set syntax:html  / php
 	{ "keys": ["ctrl+shift+v"], "command": "paste" },
 	{ "keys": ["alt+a"], "command": "find_all_under" },
 	{ "keys": ["ctrl+i"], "command": "reindent" },
+	{ "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
 ]
 
 
