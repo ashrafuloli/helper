@@ -70,3 +70,16 @@ ctrl+shift+p > mini
 
 use sinppepts function /$
 
+6.pakages uses
+--------------
+JavaScript & NodeJS Snippets
+Emmet
+DocBlockr
+A File Icon
+Color Highlighter
+Sidebar separator
+eCSStractor
+AutoFileName
+
+
+
