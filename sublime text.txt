@@ -45,14 +45,6 @@ ctrl+`
 
 ctrl+shift+p -> install package
 
-ctrl+shift+p -> coffee script 
-
-
-ctrl+shift+p -> emmet
-
-
-ctrl+shift+p -> sidebar
-
 
 4.file search
 --------------
@@ -80,6 +72,29 @@ Color Highlighter
 Sidebar separator
 eCSStractor
 AutoFileName
+Brackets Color Scheme
+Materialize
+Bracket Highlighter
+Color Highlighter
 
+
+
+7. preferences > settings
+--------------
+
+{
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 3,
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"font_size": 14,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1
+}
 
 
