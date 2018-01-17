@@ -1,0 +1,35 @@
+Ui Theme
+----------
+Atom Material
+
+
+Syntax Theme
+-------------
+Spacegray Atom Dark
+
+
+
+Pakages
+---------
+emmet
+autocomplete-paths
+atom-beautify
+atom-live-server
+file-icon
+hight-selected
+minimap
+pigments
+todo
+autocomplete-paths
+atom-jquery-snippets
+
+
+keybindings
+---------
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'ctrl-d': 'editor:duplicate-lines'
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-shift-D':'find-and-replace:select-next'
+
+
