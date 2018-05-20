@@ -1,0 +1,57 @@
+##preferences -> Sser Snippets -> html.json
+{
+  "Print to php tag": {
+		"prefix": "php",
+		"body": [
+			"<?php $1; ?>"
+		],
+		"description": "Log output to console"
+	}
+}
+
+##preferences -> Sser Snippets -> html.json
+{
+  "Print to php tag": {
+		"prefix": "php",
+		"body": [
+			"<?php $1; ?>"
+		],
+		"description": "Log output to console"
+	}
+}
+
+#Plugins
+---------
+Beautify
+Code Spell Checker
+Path Auticomplete
+PHP IntelliSense
+Sass
+Sublime Text Keymap and Settings
+Wordpress Toolbox
+
+
+#Settings
+----------
+
+{
+    "git.ignoreMissingGitWarning": true,
+    "sublimeTextKeymap.promptV3Features": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "cSpell.userWords": [
+        "colortwo",
+        "kingcomposer",
+        "kode",
+        "modren",
+        "shortcodes"
+    ],
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.colorTheme": "Sapphire",
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.executablePath": "C:\\xampp\\php\\php.exe"
+}
