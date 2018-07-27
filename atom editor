@@ -1,35 +1,60 @@
 Ui Theme
 ----------
-Atom Material
-
+atom-monokai
 
 Syntax Theme
 -------------
-Spacegray Atom Dark
-
+monokai-neo-syntax
 
 
 Pakages
 ---------
+
 emmet
 autocomplete-paths
 atom-beautify
-atom-live-server
+atom-jquery
 file-icon
 hight-selected
 minimap
+minimap-highlight-selected
 pigments
-todo
-autocomplete-paths
-atom-jquery-snippets
+jquery-snippets
+
+atom-wordpress
+autocomplete-wordpress-hooks
+
+linter
+linter-ui-default
+linter-csslint
+linter-htmlhint
+linter-php   -> PHP PATH -> C:\xampp\php\php.exe
+
+
 
 
 keybindings
 ---------
 
-'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
-  'ctrl-d': 'editor:duplicate-lines'
 'atom-workspace atom-text-editor:not([mini])':
-  'ctrl-shift-D':'find-and-replace:select-next'
+  'ctrl-d': 'editor:duplicate-lines'
+
+
+Snippets
+---------
+
+'.source.php':
+    'print_r':
+        'prefix': 'print_r'
+        'body': 'print_r($1);'
+    'return fun':
+        'prefix': 'return'
+        'body': 'return $1;'
+    'get_field fun':
+        'prefix': 'get_field'
+        'body': 'get_field("$1");'
+    'the_field fun':
+        'prefix': 'the_field'
+        'body': 'the_field("$1");'
 
 
