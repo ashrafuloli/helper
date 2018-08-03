@@ -1,13 +1,17 @@
-##preferences -> Sser Snippets -> html.json
-{
-  "Print to php tag": {
-		"prefix": "php",
-		"body": [
-			"<?php $1; ?>"
-		],
-		"description": "Log output to console"
-	}
-}
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorFocus"
+    }
+]
+
 
 ##preferences -> Sser Snippets -> html.json
 {
