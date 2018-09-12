@@ -1,6 +1,10 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
+        "key": "ctrl+alt+b",
+        "command": "HookyQR.beautify"
+    },
+    {
         "key": "ctrl+d",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorFocus"
@@ -9,6 +13,10 @@
         "key": "ctrl+shift+d",
         "command": "-editor.action.copyLinesDownAction",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "phpfmt.format"
     }
 ]
 
@@ -33,29 +41,191 @@ PHP IntelliSense
 Sass
 Sublime Text Keymap and Settings
 Wordpress Toolbox
+phpfmt - PHP formatter
+
 
 
 #Settings
 ----------
 
 {
-    "git.ignoreMissingGitWarning": true,
-    "sublimeTextKeymap.promptV3Features": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.tabSize": 2,
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
     "editor.wordWrap": "on",
-    "cSpell.userWords": [
-        "colortwo",
-        "kingcomposer",
-        "kode",
-        "modren",
-        "shortcodes"
-    ],
-    "editor.fontSize": 14,
-    "editor.formatOnPaste": true,
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "workbench.colorTheme": "Sapphire",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "git.ignoreMissingGitWarning": true,
     "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
     "php.executablePath": "C:\\xampp\\php\\php.exe"
+}
+
+
+
+##preferences -> Sser Snippets -> php.json
+{
+	"echo fun": {
+		"prefix": "echo",
+		"body": [
+			"echo '$1';"
+		]
+	},
+	"print_r fun": {
+		"prefix": "print_r",
+		"body": [
+			"print_r($1);"
+		]
+	},
+	"return fun": {
+		"prefix": "return",
+		"body": [
+			"return $1;"
+		]
+	},
+	"function fun": {
+		"prefix": "fun",
+		"body": [
+			"function ${1:name}($2) {",
+				"\t$3",
+			"}"
+		]
+	},
+	"require fun": {
+		"prefix": "require_once",
+		"body": [
+			"require_once( $1 );"
+		]
+	},
+	"include_once fun": {
+		"prefix": "include_once",
+		"body": [
+			"include_once( $1 );"
+		]
+	},
+
+	// wordpress fun
+	
+	"wordpress style.css": {
+		"prefix": "style",
+		"body": [
+			"/*",
+			"Theme Name: ${1:Name}",
+			"Theme URI: ${2:http://}",
+			"Author: ${3:Author_Name}",
+			"Author URI: ${4:http://}",
+			"Description: ${5:Theme_Description}",
+			"Version: ${6:1.0}",
+			"License: GNU General Public License v2 or later",
+			"License URI: http://www.gnu.org/licenses/gpl-2.0.html",
+			"Tags: ${7:blog, education}",
+			"Text Domain: ${8:theme_dir_name}",
+			"*/",
+		]
+	},
+	"get_field fun": {
+		"prefix": "get_field",
+		"body": [
+			"get_field('$1');"
+		]
+	},
+	"the_field fun": {
+		"prefix": "the_field",
+		"body": [
+			"the_field('$1');"
+		]
+	},
+	"add_action fun": {
+		"prefix": "add_action",
+		"body": [
+			"add_action('$1','$2');"
+		]
+	},
+	"get_theme_file_path fun": {
+		"prefix": "get_theme_file_path",
+		"body": [
+			"get_theme_file_path( '$1 );"
+		]
+	},
+	"function_exists fun": {
+		"prefix": "fun_exists",
+		"body": [
+			"if(!function_exists('${1:fun_name}')){",
+				"\tfunction ${2:fun_name}($3) {",
+					"\t\t$4",
+				"\t}",
+			"}",
+		]
+	},
+	"load theme textdomain fun": {
+		"prefix": "load_theme_textdomain",
+		"body": [
+			"load_theme_textdomain( '$1', get_theme_file_path( '/languages' ) );"
+		]
+	},
+	"add_theme_support fun": {
+		"prefix": "add_theme_support",
+		"body": [
+			"add_theme_support( '$1' )"
+		]
+	},
+	"add_editor_style fun": {
+		"prefix": "add_editor_style",
+		"body": [
+			"add_editor_style( '$1' )"
+		]
+	},
+	"register_nav_menu fun": {
+		"prefix": "register_nav_menu",
+		"body": [
+			"register_nav_menu( '${1:MenuID}' , __( '${2:MenuName}', '${3:textdomain}' ) )"
+		]
+	},
+	"register_nav_menus fun": {
+		"prefix": "register_nav_menus",
+		"body": [
+			"register_nav_menus( array(",
+				"\t'${1:MenuID}'   => __( '${2:MenuName}', '${3:textdomain}' ),",
+			") );"
+		]
+	},
+	"add_image_size fun": {
+		"prefix": "add_image_size",
+		"body": [
+			"add_image_size( '$1', ${2:width}, ${3:height}, ${4:true} );"
+		]
+	},
+	"wp_enqueue_style fun": {
+		"prefix": "wp_enqueue_style",
+		"body": [
+			"wp_enqueue_style( '${1:Id}' , get_theme_file_uri( '${2:url}' ),  ${3:dep}, ${4:ver} );"
+		]
+	},
+	"wp_enqueue_script fun": {
+		"prefix": "wp_enqueue_script",
+		"body": [
+			"wp_enqueue_script( '${1:Id}' , get_theme_file_uri( '${2:url}' ),  ${3:dep}, ${4:ver} , true );"
+		]
+	},
+	"<<< fun": {
+		"prefix": "<<<",
+		"body": [
+			"<<<${1:NAME}",
+			"${1:NAME};",
+		]
+	},
+	"register_sidebar fun": {
+		"prefix": "register_sidebar",
+		"body": [
+			"register_sidebar( array(",
+				"'name'          => __( 'Sidebar', 'philosophy' ),",
+				"'id'            => 'sidebar-1',",
+				"'description'   => __( 'Widgets in this area be shown on Blog page.', 'philosophy' ),",
+				"'before_widget' => '<div id=\"%1$s\" class=\"%2$s\">',",
+				"'after_widget'  => '</div>',",
+				"'before_title'  => '<h3 class=\"widget-title\">',",
+				"'after_title'   => '</h3>',",
+			") );",
+		]
+	},
+	
 }
