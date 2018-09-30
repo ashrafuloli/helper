@@ -38,10 +38,12 @@ Beautify
 Code Spell Checker
 Path Auticomplete
 PHP IntelliSense
-Sass
 Sublime Text Keymap and Settings
 Wordpress Toolbox
 phpfmt - PHP formatter
+
+Sass
+Live Sass Compiler
 
 
 
@@ -58,6 +60,14 @@ phpfmt - PHP formatter
     "git.ignoreMissingGitWarning": true,
     "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
     "php.executablePath": "C:\\xampp\\php\\php.exe"
+    
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        }
+    ]
 }
 
 
