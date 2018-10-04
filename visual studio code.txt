@@ -1,4 +1,5 @@
 // Place your key bindings in this file to overwrite the defaults
+
 [
     {
         "key": "ctrl+alt+b",
@@ -15,8 +16,26 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+f",
+        "key": "ctrl+alt+l",
         "command": "phpfmt.format"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
     }
 ]
 
@@ -52,6 +71,7 @@ Live Sass Compiler
 
 {
     "editor.fontSize": 16,
+    "editor.detectIndentation": false,
     "editor.renderWhitespace": "all",
     "editor.wordWrap": "on",
     "editor.snippetSuggestions": "top",
