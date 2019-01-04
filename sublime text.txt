@@ -64,20 +64,40 @@ use sinppepts function /$
 
 6.pakages uses
 --------------
-JavaScript & NodeJS Snippets
 Emmet
-DocBlockr
-A File Icon
-Color Highlighter
-Sidebar separator
-eCSStractor
+Emmet Css Snippets
 AutoFileName
-Brackets Color Scheme
-Materialize
+A File Icon
 Bracket Highlighter
 Color Highlighter
+DocBlockr
 
+Sublime Linter
+Sublime Linter-php
 
+Theme - Flatland
+
+JavaScript & NodeJS Snippets
+Package Control
+Nodejs
+SFTP
+
+WordPress
+WordPress Snippets
+WordPress Code Reference
+WordPress Developer Resources
+
+Laravel 5 Snippets
+Laravel Blade Highlighter
+Blade Snippets
+Laravel Blade Auto Complete
+Laravel Blade Spacer
+
+Code Igniter Snippets
+
+Vue Syntax Highlight
+Vuejs Snippets
+Vuejs Snippets Airbnb
 
 7. preferences > settings
 --------------
