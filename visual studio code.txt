@@ -53,18 +53,36 @@
 
 #Plugins
 ---------
-Beautify
-Code Spell Checker
-Path Auticomplete
-PHP IntelliSense
-Sublime Text Keymap and Settings
-Wordpress Toolbox
-phpfmt - PHP formatter
-
+Auto Close Tag
+Auto Import
+AutoFileName
+Better Comment
+Create File & Folder : On The Go
+css-auto-prefix
 Sass
 Live Sass Compiler
 Better align
 
+Flatland Monokai
+Material Icon Theme
+Node.js Modules Intellisense
+
+PHP Intelephense
+phpfmt - PHP formatter
+
+Wordpress Devlopment
+WordPress Snippets
+WordPress Snippet
+
+Laravel 5 Snippets
+Laravel Blade Snippets
+Laravel Blade Spacer
+Laravel goto view
+DotENV
+
+Vetur
+Vue 2 Snippets
+Vue VSCode Snippets
 
 #Settings
 ----------
