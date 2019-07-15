@@ -2,6 +2,14 @@
 
 [
     {
+        "key": "ctrl+alt+r",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+    {
         "key": "ctrl+alt+b",
         "command": "HookyQR.beautify"
     },
@@ -14,15 +22,6 @@
         "key": "ctrl+shift+d",
         "command": "-editor.action.copyLinesDownAction",
         "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "phpfmt.format"
-    },
-    {
-        "key": "ctrl+x",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "ctrl+shift+k",
@@ -53,6 +52,15 @@
 
 #Plugins
 ---------
+Code Runner
+Material Icon Theme
+Material Theme
+Sass
+Beautify css/sass/scss/less
+
+
+
+
 Auto Close Tag
 Auto Import
 AutoFileName
