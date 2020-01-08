@@ -86,6 +86,7 @@ WordPress
 WordPress Snippets
 WordPress Code Reference
 WordPress Developer Resources
+WordPress Completions
 
 Laravel 5 Snippets
 Laravel Blade Highlighter
