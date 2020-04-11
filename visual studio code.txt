@@ -2,16 +2,8 @@
 
 [
     {
-        "key": "ctrl+alt+r",
+        "key": "ctrl+r",
         "command": "code-runner.run"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "-code-runner.run"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "HookyQR.beautify"
     },
     {
         "key": "ctrl+d",
@@ -35,31 +27,41 @@
     {
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
     }
 ]
 
 
-##preferences -> Sser Snippets -> html.json
-{
-  "Print to php tag": {
-		"prefix": "php",
-		"body": [
-			"<?php $1; ?>"
-		],
-		"description": "Log output to console"
-	}
-}
 
 #Plugins
 ---------
 Code Runner
+ES7 React/Redux/GraphQL/React-Native snippets
+IntelliSense for CSS class names in HTML
+Material Icon Theme
+One Dark Pro
+Path Intellisense
+PHP DocBlocker
+PHP Intelephense
+PHP IntelliSense
+phpfmt - PHP formatter
+Prettier - Code formatter
+Sass
+Sass Lint
+SCSS IntelliSense
+
+
+#Old Plugins
+---------
+
 Material Icon Theme
 Material Theme
 Sass
 Beautify css/sass/scss/less
-
-
-
 
 Auto Close Tag
 Auto Import
@@ -96,192 +98,92 @@ Vue VSCode Snippets
 ----------
 
 {
-    "editor.fontSize": 16,
-    "editor.detectIndentation": false,
-    "editor.renderWhitespace": "all",
-    "editor.wordWrap": "on",
-    "editor.snippetSuggestions": "top",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
+    "workbench.iconTheme": "material-icon-theme",
     "git.ignoreMissingGitWarning": true,
-    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
-    "php.executablePath": "C:\\xampp\\php\\php.exe"
-    
-    "liveSassCompile.settings.formats":[
-        {
-            "format": "compressed",
-            "extensionName": ".min.css",
-            "savePath": "~/../css/"
-        }
-    ]
+    // "editor.fontFamily": "Fira Code Retina",
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.fontSize": 18,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.editor.enablePreview": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "editor.tabCompletion": "on",
+    "editor.renderWhitespace": "selection",
+    "phpfmt.psr2": false,
+    "phpfmt.exclude": [
+        "AllmanStyleBraces"
+    ],
+    "phpfmt.passes": [
+        "AlignDoubleArrow",
+        "SpaceAroundParentheses",
+        "ShortArray",
+        "SpaceAroundControlStructures"
+    ],
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "php": "php",
+        "python": "python",
+        "perl": "perl",
+        "ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
+        "go": "go run",
+        "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "code-runner.clearPreviousOutput": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "prettier.tabWidth": 4,
+    "php-docblocker.returnGap": true,
 }
 
 
 
 ##preferences -> Sser Snippets -> php.json
+
 {
-	"echo fun": {
-		"prefix": "echo",
+	"php echo": {
+		"prefix": "phpe",
 		"body": [
-			"echo '$1';"
-		]
+			"<?php echo $1; ?>"
+		],
+		"description": "Php Echo"
 	},
-	"print_r fun": {
-		"prefix": "print_r",
+	"php": {
+		"prefix": "php",
 		"body": [
-			"print_r($1);"
-		]
+			"<?php \n"
+		],
+		"description": "Php"
 	},
-	"return fun": {
-		"prefix": "return",
+	"php function": {
+		"prefix": "func",
 		"body": [
-			"return $1;"
-		]
+			"function ${1:function_name}(${2}){",
+			"\t$3",
+			"}",
+		],
+		"description": "Functions"
 	},
-	"function fun": {
-		"prefix": "fun",
-		"body": [
-			"function ${1:name}($2) {",
-				"\t$3",
-			"}"
-		]
-	},
-	"require fun": {
-		"prefix": "require_once",
+	"require ": {
+		"prefix": "req",
 		"body": [
 			"require_once( $1 );"
 		]
 	},
-	"include_once fun": {
-		"prefix": "include_once",
+	"include ": {
+		"prefix": "inc",
 		"body": [
 			"include_once( $1 );"
 		]
 	},
-
-	// wordpress fun
-	
-	"wordpress style.css": {
-		"prefix": "style",
-		"body": [
-			"/*",
-			"Theme Name: ${1:Name}",
-			"Theme URI: ${2:http://}",
-			"Author: ${3:Author_Name}",
-			"Author URI: ${4:http://}",
-			"Description: ${5:Theme_Description}",
-			"Version: ${6:1.0}",
-			"License: GNU General Public License v2 or later",
-			"License URI: http://www.gnu.org/licenses/gpl-2.0.html",
-			"Tags: ${7:blog, education}",
-			"Text Domain: ${8:theme_dir_name}",
-			"*/",
-		]
-	},
-	"get_field fun": {
-		"prefix": "get_field",
-		"body": [
-			"get_field('$1');"
-		]
-	},
-	"the_field fun": {
-		"prefix": "the_field",
-		"body": [
-			"the_field('$1');"
-		]
-	},
-	"add_action fun": {
-		"prefix": "add_action",
-		"body": [
-			"add_action('$1','$2');"
-		]
-	},
-	"get_theme_file_path fun": {
-		"prefix": "get_theme_file_path",
-		"body": [
-			"get_theme_file_path( '$1 );"
-		]
-	},
-	"function_exists fun": {
-		"prefix": "fun_exists",
-		"body": [
-			"if(!function_exists('${1:fun_name}')){",
-				"\tfunction ${2:fun_name}($3) {",
-					"\t\t$4",
-				"\t}",
-			"}",
-		]
-	},
-	"load theme textdomain fun": {
-		"prefix": "load_theme_textdomain",
-		"body": [
-			"load_theme_textdomain( '$1', get_theme_file_path( '/languages' ) );"
-		]
-	},
-	"add_theme_support fun": {
-		"prefix": "add_theme_support",
-		"body": [
-			"add_theme_support( '$1' )"
-		]
-	},
-	"add_editor_style fun": {
-		"prefix": "add_editor_style",
-		"body": [
-			"add_editor_style( '$1' )"
-		]
-	},
-	"register_nav_menu fun": {
-		"prefix": "register_nav_menu",
-		"body": [
-			"register_nav_menu( '${1:MenuID}' , __( '${2:MenuName}', '${3:textdomain}' ) )"
-		]
-	},
-	"register_nav_menus fun": {
-		"prefix": "register_nav_menus",
-		"body": [
-			"register_nav_menus( array(",
-				"\t'${1:MenuID}'   => __( '${2:MenuName}', '${3:textdomain}' ),",
-			") );"
-		]
-	},
-	"add_image_size fun": {
-		"prefix": "add_image_size",
-		"body": [
-			"add_image_size( '$1', ${2:width}, ${3:height}, ${4:true} );"
-		]
-	},
-	"wp_enqueue_style fun": {
-		"prefix": "wp_enqueue_style",
-		"body": [
-			"wp_enqueue_style( '${1:Id}' , get_theme_file_uri( '${2:url}' ),  ${3:dep}, ${4:ver} );"
-		]
-	},
-	"wp_enqueue_script fun": {
-		"prefix": "wp_enqueue_script",
-		"body": [
-			"wp_enqueue_script( '${1:Id}' , get_theme_file_uri( '${2:url}' ),  ${3:dep}, ${4:ver} , true );"
-		]
-	},
-	"<<< fun": {
-		"prefix": "<<<",
-		"body": [
-			"<<<${1:NAME}",
-			"${1:NAME};",
-		]
-	},
-	"register_sidebar fun": {
-		"prefix": "register_sidebar",
-		"body": [
-			"register_sidebar( array(",
-				"'name'          => __( 'Sidebar', 'philosophy' ),",
-				"'id'            => 'sidebar-1',",
-				"'description'   => __( 'Widgets in this area be shown on Blog page.', 'philosophy' ),",
-				"'before_widget' => '<div id=\"%1$s\" class=\"%2$s\">',",
-				"'after_widget'  => '</div>',",
-				"'before_title'  => '<h3 class=\"widget-title\">',",
-				"'after_title'   => '</h3>',",
-			") );",
-		]
-	},
-	
 }
