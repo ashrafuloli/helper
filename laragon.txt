@@ -1,0 +1,10 @@
+
+mysql set password -> open laragon terminal
+cd C:\laragon\bin\mysql\mysql-5.7.33-winx64\bin
+mysql -u root -p
+blank password than enter
+
+
+https://www.phpmyadmin.net/downloads/
+C:\laragon\etc\apps -> phpMyAdmin
+
