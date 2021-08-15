@@ -8,3 +8,8 @@ blank password than enter
 https://www.phpmyadmin.net/downloads/
 C:\laragon\etc\apps -> phpMyAdmin
 
+
+// virtual domain
+https://laragon.org/docs/pretty-urls.html
+
+> C:\laragon\etc\apache2\sites-enabled
