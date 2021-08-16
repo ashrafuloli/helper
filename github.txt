@@ -1,0 +1,97 @@
+// back prev commit 
+
+git log
+copy commit id
+git reset --hard {commit_id}
+git push -f github master
+
+
+
+tutorial
+-------------------
+https://www.youtube.com/playlist?list=PL1F56EA413018EEE1
+
+
+https://git-scm.com/
+
+git --version
+
+git init
+git config --global user.name "rejbioli"
+git config --global user.email "rock.ashraful@gmail.com"
+
+git config --global user.name "fname lname"
+git config --global user.email "example@gmail.com"
+git config --global user.password "secret"
+
+chack
+-------
+
+git config --global user.name
+git config --global user.email
+
+
+creat file
+----------
+
+touch filename.txt
+
+
+notepad test.txt
+
+
+see file
+-------
+git status
+
+
+file parmision
+-------------
+git add test.txt
+
+
+
+all file add parmision
+-----------------------
+
+git add .
+
+commit file
+------------
+
+git commit -m "new file created"
+
+
+creat ssh key
+------------------
+
+ssh-keygen -t rsa -C "rock.ashraful@gmail.com"
+
+
+chack > shh key
+----------------
+C:\Users\rejbioli\.ssh
+
+
+connection github
+------------------
+
+ssh -T git@github.com
+
+
+
+connection folder
+------------------
+
+git remote add origin git@github.com:rejbioli/tests.git
+
+
+
+upload file
+------------------
+
+git push -u origin master
+
+pull file
+------------------
+git pull origin branchname --allow-unrelated-histories
