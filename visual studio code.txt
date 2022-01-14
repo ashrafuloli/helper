@@ -39,6 +39,9 @@
 
 #Plugins
 ---------
+JellyFish Theme
+
+
 Code Runner
 ES7 React/Redux/GraphQL/React-Native snippets
 IntelliSense for CSS class names in HTML
