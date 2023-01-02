@@ -8,6 +8,14 @@ blank password than enter
 https://www.phpmyadmin.net/downloads/
 C:\laragon\etc\apps -> phpMyAdmin
 
+https://5balloons.info/phpmyadmin-config-for-auto-login-and-allownopassword-login/
+
+To fix this and be able to login to PHPMyAdmin without entering the password. Copy the file named config.sample.inc.php to config.inc.php and change the following property to true.
+
+**For the usual phpmyadmin installation, config.sample.inc.php file is usually located at /etc/phpmyadmin/config.inc.php
+
+$cfg['Servers'][$i]['AllowNoPassword'] = true;
+
 
 // virtual domain
 https://laragon.org/docs/pretty-urls.html
