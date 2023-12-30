@@ -46,6 +46,8 @@ server {
 
 ``` shell
 brew install php
+
+php --ini
 ```
 
 <br>
