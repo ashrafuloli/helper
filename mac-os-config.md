@@ -48,6 +48,11 @@ server {
 brew install php
 
 php --ini
+
+upload_max_filesize 128M
+post_max_size 128M
+max_execution_time 300
+max_input_time 300
 ```
 
 <br>
