@@ -3,41 +3,17 @@ https://brew.sh/
 
 <br>
 
-## Nginx Install
+## Composer Install
 
 ``` shell
-brew install nginx
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
 ```
 
 ``` shell
-cd /opt/homebrew/etc/nginx/nginx.conf
-```
-
-> copy this code
-```
-server {
-      listen 80;
-      server_name localhost;
-
-      root /Users/ashrafuloli/www;
-      index index.php index.html index.htm;
-
-      autoindex on;
-
-      location / {
-          try_files $uri $uri/ /index.php?$query_string;
-      }
-
-      location ~ \.php {
-          fastcgi_index index.php;
-          fastcgi_pass 127.0.0.1:9000;
-          include fastcgi_params;
-          fastcgi_split_path_info ^(.+\.php)(/.+)$;
-          fastcgi_param PATH_INFO $fastcgi_path_info;
-          fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
-          fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-      }
-  }
+sudo mv composer.phar /usr/local/bin/composer
 ```
 
 <br>
@@ -54,6 +30,34 @@ post_max_size 128M
 max_execution_time 300
 max_input_time 300
 ```
+
+<br>
+
+## Laravel Valet
+
+``` shell
+composer global require laravel/valet
+```
+
+> copy this code
+```
+code ~/.zshrc
+
+# valet
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+source ~/.zshrc
+```
+
+
+``` shell
+valet install
+
+cd /dir
+
+valet park
+```
+
 
 <br>
 
