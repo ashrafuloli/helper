@@ -1,0 +1,9 @@
+->
+	Computer\HKEY_CLASSES_ROOT\Directory\Background\shell
+
+->
+	cmder
+	-> default -> Open With Cmder
+	-> icon -> "C:\cmder\Cmder.exe"
+		-> command
+			-> "C:\cmder\Cmder.exe" "%V"
