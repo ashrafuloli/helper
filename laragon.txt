@@ -1,3 +1,5 @@
+https://github.com/leokhoa/laragon/releases/tag/6.0.0
+
 
 mysql set password -> open laragon terminal
 cd C:\laragon\bin\mysql\mysql-5.7.33-winx64\bin
