@@ -1,4 +1,0 @@
-plugin install ftp problem
-===============================
-
-define("FS_METHOD", "direct");
