@@ -1,8 +1,0 @@
-// doc
-https://github.com/marketplace/actions/ftp-deploy
-
-// tutorial
-https://www.youtube.com/watch?v=UNWIXYSZfZY&ab_channel=WatchandLearn
-
-// test done
-https://github.com/ashrafuloli/nokla
